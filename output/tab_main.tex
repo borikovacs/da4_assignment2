@@ -1,0 +1,30 @@
+\renewcommand\cellalign{t}
+\begin{threeparttable}
+\begin{tabular}{lccccccc}
+\toprule
+ & OLS 2005 & OLS 2023 & FD & FD 2 lags & FD 6 lags & FE \\
+ & (1) & (2) & (3) & (4) & (5) & (6) \\
+\midrule
+\addlinespace
+ln(GDP pc) & \makecell{1.226*** \\ (0.075)} & \makecell{1.067*** \\ (0.063)} &  &  &  & \makecell{0.609*** \\ (0.079)} \\
+$\Delta$ ln(GDP pc) &  &  & \makecell{0.431*** \\ (0.058)} & \makecell{0.387*** \\ (0.061)} & \makecell{0.408*** \\ (0.069)} &  \\
+$\Delta$ ln(GDP pc)$_{t-1}$ &  &  &  & \makecell{0.013 \\ (0.052)} & \makecell{0.042 \\ (0.060)} &  \\
+$\Delta$ ln(GDP pc)$_{t-2}$ &  &  &  & \makecell{0.050 \\ (0.030)} & \makecell{-0.004 \\ (0.037)} &  \\
+$\Delta$ ln(GDP pc)$_{t-3}$ &  &  &  &  & \makecell{0.049 \\ (0.043)} &  \\
+$\Delta$ ln(GDP pc)$_{t-4}$ &  &  &  &  & \makecell{0.067 \\ (0.055)} &  \\
+$\Delta$ ln(GDP pc)$_{t-5}$ &  &  &  &  & \makecell{-0.044 \\ (0.052)} &  \\
+$\Delta$ ln(GDP pc)$_{t-6}$ &  &  &  &  & \makecell{0.064 \\ (0.042)} &  \\
+Constant & \makecell{-10.945*** \\ (0.685)} & \makecell{-9.638*** \\ (0.612)} & \makecell{-0.006 \\ (0.009)} & \makecell{0.010 \\ (0.009)} & \makecell{-0.005 \\ (0.008)} &  \\
+\midrule
+\addlinespace
+country & - & - & - & - & - & x \\
+\midrule
+\addlinespace
+Observations & 185 & 186 & 5763 & 5387 & 4635 & 5951 \\
+$R^2$ & 0.629 & 0.624 & 0.055 & 0.054 & 0.059 & 0.966 \\
+$R^2$ Within & - & - & - & - & - & 0.226 \\
+\bottomrule
+\end{tabular}
+\footnotesize Significance levels: $*$ p $<$ 0.05, $**$ p $<$ 0.01, $***$ p $<$ 0.001. Format of coefficient cell: Coefficient 
+ (Std. Error)
+\end{threeparttable}

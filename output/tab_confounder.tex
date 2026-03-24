@@ -1,0 +1,30 @@
+\renewcommand\cellalign{t}
+\begin{threeparttable}
+\begin{tabular}{lccccccc}
+\toprule
+ & OLS 2005 & OLS 2005 + conf. & FD 2 lags & FD 2 lags + conf. & FE & FE + conf. \\
+ & (1) & (2) & (3) & (4) & (5) & (6) \\
+\midrule
+\addlinespace
+ln(GDP pc) & \makecell{1.226*** \\ (0.075)} & \makecell{1.196*** \\ (0.122)} &  &  & \makecell{0.609*** \\ (0.079)} & \makecell{0.584*** \\ (0.076)} \\
+Urban pop. (\%) &  & \makecell{0.002 \\ (0.008)} &  &  &  & \makecell{0.016*** \\ (0.005)} \\
+$\Delta$ ln(GDP pc) &  &  & \makecell{0.387*** \\ (0.061)} & \makecell{0.390*** \\ (0.060)} &  &  \\
+$\Delta$ ln(GDP pc)$_{t-1}$ &  &  & \makecell{0.013 \\ (0.052)} & \makecell{0.013 \\ (0.052)} &  &  \\
+$\Delta$ ln(GDP pc)$_{t-2}$ &  &  & \makecell{0.050 \\ (0.030)} & \makecell{0.050 \\ (0.030)} &  &  \\
+$\Delta$ Urban (\%) &  &  &  & \makecell{-0.007 \\ (0.005)} &  &  \\
+$\Delta$ Urban (\%)$_{t-1}$ &  &  &  & \makecell{0.003 \\ (0.005)} &  &  \\
+$\Delta$ Urban (\%)$_{t-2}$ &  &  &  & \makecell{0.016** \\ (0.005)} &  &  \\
+Constant & \makecell{-10.945*** \\ (0.685)} & \makecell{-10.770*** \\ (0.852)} & \makecell{0.010 \\ (0.009)} & \makecell{0.007 \\ (0.009)} &  &  \\
+\midrule
+\addlinespace
+country & - & - & - & - & x & x \\
+\midrule
+\addlinespace
+Observations & 185 & 185 & 5387 & 5387 & 5951 & 5951 \\
+$R^2$ & 0.629 & 0.630 & 0.054 & 0.057 & 0.966 & 0.966 \\
+$R^2$ Within & - & - & - & - & 0.226 & 0.247 \\
+\bottomrule
+\end{tabular}
+\footnotesize Significance levels: $*$ p $<$ 0.05, $**$ p $<$ 0.01, $***$ p $<$ 0.001. Format of coefficient cell: Coefficient 
+ (Std. Error)
+\end{threeparttable}
